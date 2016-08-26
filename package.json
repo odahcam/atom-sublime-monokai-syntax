@@ -22,7 +22,5 @@
     "bugs": {
         "url": "https://github.com/odahcam/atom-sublime-monokai/issues"
     },
-    "homepage": {
-        "https://github.com/odahcam/atom-sublime-monokai#readme"
-    }
+    "homepage": "https://github.com/odahcam/atom-sublime-monokai#readme"
 }
