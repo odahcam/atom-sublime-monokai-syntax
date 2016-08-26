@@ -1,0 +1,28 @@
+{
+    "name": "atom-monokai-syntax",
+    "theme": "syntax",
+    "version": "0.0.0",
+    "private": true,
+    "description": "A monokai theme, made with <3 and Vodka (kidding) for Sublime Text Monokai syntax lovers.",
+    "keywords": [
+        "syntax",
+        "theme",
+        "monokai",
+        "sublime",
+        "odahcam",
+        "php",
+        "js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/odahcam/atom-sublime-monokai.git"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "bugs": {
+        "url": "https://github.com/odahcam/atom-sublime-monokai/issues"
+    },
+    "homepage": {
+        "https://github.com/odahcam/atom-sublime-monokai#readme"
+    }
+}
