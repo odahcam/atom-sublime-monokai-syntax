@@ -1,25 +1,25 @@
 {
-    "name": "atom-sublime-monokai-syntax",
-    "theme": "syntax",
-    "version": "0.0.0",
-    "description": "A monokai theme, made with <3 and Vodka (kidding) for Sublime Text Monokai syntax lovers.",
-    "keywords": [
-        "syntax",
-        "theme",
-        "monokai",
-        "sublime",
-        "odahcam",
-        "php",
-        "js"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/odahcam/atom-sublime-monokai-syntax.git"
-    },
-    "license": "MIT",
-    "readmeFilename": "README.md",
-    "bugs": {
-        "url": "https://github.com/odahcam/atom-sublime-monokai-syntax/issues"
-    },
-    "homepage": "https://github.com/odahcam/atom-sublime-monokai-syntax#readme"
+  "name": "atom-sublime-monokai-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A monokai theme, made with <3 and Vodka (kidding) for Sublime Text Monokai syntax lovers.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "monokai",
+    "sublime",
+    "odahcam",
+    "php",
+    "js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odahcam/atom-sublime-monokai-syntax.git"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/odahcam/atom-sublime-monokai-syntax/issues"
+  },
+  "homepage": "https://github.com/odahcam/atom-sublime-monokai-syntax#readme"
 }
