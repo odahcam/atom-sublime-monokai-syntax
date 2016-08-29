@@ -170,9 +170,13 @@ atom-text-editor {
     .php {
         // PHP syntax highlighting
         .embedded.php {
-            color: white;
+            color: @syntax-text-color; // white
             font-weight: bold;
             font-style: italic;
+        }
+
+        .variable.php {
+            color: @syntax-text-color; // white
         }
     }
 }
