@@ -66,6 +66,18 @@ atom-text-editor {
     }
 }
 
+.string {
+    color: @yellow;
+}
+
+.source {
+    color: @syntax-text-color
+}
+
+.function-call.object {
+    color: @function-call-color;
+}
+
 .entity {
     &.name.class {
         text-decoration: none;
@@ -73,11 +85,11 @@ atom-text-editor {
     }
 
     &.name.function {
-        color: @green;
+        color: @function-declaration-color;
 
         .method-call & {
             // selects the parent which className is method-call
-            color: @blue;
+            color: @function-call-color;
         }
     }
 
@@ -109,12 +121,13 @@ atom-text-editor {
     }
 }
 
-.keyword {
-    color: @pink !important;
-}
-
-.meta.tag {
-    color: @syntax-text-color;
+.meta {
+    &.tag {
+        color: @syntax-text-color;
+    }
+    &.delimiter.period {
+        color: @pink
+    }
 }
 
 .storage {
@@ -126,14 +139,10 @@ atom-text-editor {
     }
 }
 
-.string {
-    color: @yellow;
-}
-
 .support {
     &.constant,
     &.function {
-        color: @blue;
+        color: @function-call-color;
     }
 
     &.class,
@@ -144,6 +153,8 @@ atom-text-editor {
 }
 
 .variable {
+    color: @syntax-text-color; // white
+
     &.parameter {
         font-style: italic;
         color: @orange;
@@ -156,18 +167,15 @@ atom-text-editor {
         font-style: italic;
     }
 }
-
 // Jade syntax
 .class.jade {
     color: @purple;
 }
-
 // Prevent underlines from making their way into whitespace elements
 .leading-whitespace,
 .trailing-whitespace {
     display: inline-block;
 }
-
 // specific language highlight
 .php {
     // PHP syntax highlighting
@@ -175,15 +183,5 @@ atom-text-editor {
         color: @syntax-text-color; // white
         font-weight: bold;
         font-style: italic;
-    }
-
-    .variable {
-        color: @syntax-text-color; // white
-    }
-}
-
-.js {
-    .meta.delimiter.method {
-        color: @pink
     }
 }
