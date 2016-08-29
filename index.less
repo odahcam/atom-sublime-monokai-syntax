@@ -156,27 +156,34 @@ atom-text-editor {
         font-style: italic;
     }
 }
+
 // Jade syntax
 .class.jade {
     color: @purple;
 }
+
 // Prevent underlines from making their way into whitespace elements
 .leading-whitespace,
 .trailing-whitespace {
     display: inline-block;
 }
-// specific language highlight
-.text {
-    .php {
-        // PHP syntax highlighting
-        .embedded.php {
-            color: @syntax-text-color; // white
-            font-weight: bold;
-            font-style: italic;
-        }
 
-        .variable.php {
-            color: @syntax-text-color; // white
-        }
+// specific language highlight
+.php {
+    // PHP syntax highlighting
+    .embedded.php {
+        color: @syntax-text-color; // white
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .variable.php {
+        color: @syntax-text-color; // white
+    }
+}
+
+.js {
+    .meta.delimiter.method {
+        color: @pink
     }
 }
