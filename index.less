@@ -52,6 +52,7 @@ atom-text-editor {
         }
     }
 }
+
 .function-call.object {
     color: @function-call-color;
 }
@@ -97,6 +98,7 @@ atom-text-editor {
     &.deprecated {
         background-color: @purple;
     }
+
     &.illegal {
         background-color: @red;
         color: @syntax-background-color;
@@ -107,6 +109,7 @@ atom-text-editor {
     &.tag {
         color: @syntax-text-color;
     }
+
     &.delimiter.period {
         color: @pink
     }
@@ -150,15 +153,18 @@ atom-text-editor {
     }
 }
 // Jade syntax
+
 .class.jade {
     color: @purple;
 }
 // Prevent underlines from making their way into whitespace elements
+
 .leading-whitespace,
 .trailing-whitespace {
     display: inline-block;
 }
 // specific language highlight
+
 .php {
     // PHP syntax highlighting
     .punctuation.section.embedded {
