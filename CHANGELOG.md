@@ -1,3 +1,7 @@
+## 0.3.1 - Keywords
+* Corrected CSS inheritance fault that made keywords looks like strings.
+* CSS more optmized, far from ideal, but better than before.
+
 ## 0.3.0 - Stable
 * Various function declaration/call color highlight corrected
 * Inside and outside string syntax colors corrected

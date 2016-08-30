@@ -52,28 +52,6 @@ atom-text-editor {
         }
     }
 }
-
-.comment {
-    color: @brown;
-}
-
-.constant {
-    &.character,
-    &.language,
-    &.numeric,
-    &.other {
-        color: @purple;
-    }
-}
-
-.string {
-    color: @yellow;
-}
-
-.source {
-    color: @syntax-text-color
-}
-
 .function-call.object {
     color: @function-call-color;
 }
@@ -118,6 +96,10 @@ atom-text-editor {
 
     &.deprecated {
         background-color: @purple;
+    }
+    &.illegal {
+        background-color: @red;
+        color: @syntax-background-color;
     }
 }
 

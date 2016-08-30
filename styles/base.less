@@ -63,8 +63,25 @@ atom-text-editor .search-results .marker.current-result .region {
     border: 1px solid @syntax-result-marker-color-selected;
 }
 
+.string {
+    color: @yellow;
+}
+
 .comment {
-    color: @light-gray;
+    color: @brown;
+}
+
+.constant {
+    &.character,
+    &.language,
+    &.numeric,
+    &.other {
+        color: @constant-color;
+    }
+}
+
+.source {
+    color: @syntax-text-color
 }
 
 .keyword {
@@ -73,15 +90,6 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .storage {
     color: @purple;
-}
-
-.constant {
-    color: @constant-color;
-}
-
-.invalid.illegal {
-    background-color: @red;
-    color: @syntax-background-color;
 }
 
 :host([mini]) .scroll-view,
