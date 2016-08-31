@@ -1,3 +1,6 @@
+## 0.3.8 - Absolute path for screenshot
+* README.md update.
+
 ## 0.3.6 - Absolute path for screenshot
 * This is just an workaround, I want to follow the best practices in Git repo soon.
 
