@@ -1,3 +1,6 @@
+## 0.3.6 - Absolute path for screenshot
+* This is just an workaround, I want to follow the best practices in Git repo soon.
+
 ## 0.3.4 - Arguments/parameters + SQL
 * Corrected: argumets in PHP function declarations where not being orange colored.
 * SQL syntax was white inside a PHP string, cause `.source` is white, added exception for source coloring in SQL embedded.
