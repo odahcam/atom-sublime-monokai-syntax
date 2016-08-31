@@ -58,36 +58,40 @@ atom-text-editor {
 }
 
 .entity {
-    &.name.class {
-        text-decoration: none;
-        color: @green;
-    }
+    &.name {
+        &.class {
+            text-decoration: none;
+            color: @green;
+        }
 
-    &.name.function {
-        color: @function-declaration-color;
+        &.function {
+            color: @function-declaration-color;
 
-        .method-call & {
-            // selects the parent which className is method-call
-            color: @function-call-color;
+            .method-call & {
+                // selects the parent which className is method-call
+                color: @function-call-color;
+            }
+        }
+
+        &.instance {
+            color: @blue;
+        }
+
+        &.tag {
+            color: @pink;
         }
     }
 
-    &.name.instance {
-        color: @blue;
-    }
+    &.other {
+        &.attribute-name {
+            color: @green;
+        }
 
-    &.name.tag {
-        color: @pink;
-    }
-
-    &.other.attribute-name {
-        color: @green;
-    }
-
-    &.other.inherited-class {
-        font-style: italic;
-        text-decoration: none;
-        color: @green;
+        &.inherited-class {
+            font-style: italic;
+            text-decoration: none;
+            color: @green;
+        }
     }
 }
 
@@ -129,7 +133,6 @@ atom-text-editor {
 
 .variable {
     color: @syntax-text-color; // white
-
     // 'self' Python
     &.language.python,
     // 'this' Javascript
@@ -160,13 +163,12 @@ atom-text-editor {
 }
 
 // Prevent underlines from making their way into whitespace elements
-
 .leading-whitespace,
 .trailing-whitespace {
     display: inline-block;
 }
-// specific language highlight
 
+// specific language highlight
 .php {
     // PHP syntax highlighting
     .punctuation.section.embedded {

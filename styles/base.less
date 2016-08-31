@@ -10,7 +10,7 @@ atom-text-editor {
     }
 
     .indent-guide {
-        color: @syntax-indent-guide-color;
+        box-shadow: inset 1px 0 @syntax-indent-guide-color;
     }
 
     .invisible-character {
@@ -71,6 +71,14 @@ atom-text-editor .search-results .marker.current-result .region {
     color: @brown;
 }
 
+.source {
+    color: @syntax-text-color;
+
+    &.sql.embedded.php {
+        color: @yellow;
+    }
+}
+
 .constant {
     &.character,
     &.language,
@@ -78,10 +86,6 @@ atom-text-editor .search-results .marker.current-result .region {
     &.other {
         color: @constant-color;
     }
-}
-
-:not(.string.sql.php) .source {
-    color: @syntax-text-color
 }
 
 .keyword {
