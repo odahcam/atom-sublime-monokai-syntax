@@ -1,3 +1,8 @@
+## 0.3.4 - Arguments/parameters + SQL
+* Corrected: argumets in PHP function declarations where not being orange colored.
+* SQL syntax was white inside a PHP string, cause `.source` is white, added exception for source coloring in SQL embedded.
+* Updated README.md
+
 ## 0.3.1 - Keywords
 * Corrected CSS inheritance fault that made keywords looks like strings.
 * CSS more optmized, far from ideal, but better than before.

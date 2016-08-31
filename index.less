@@ -105,16 +105,6 @@ atom-text-editor {
     }
 }
 
-.meta {
-    &.tag {
-        color: @syntax-text-color;
-    }
-
-    &.delimiter.period {
-        color: @pink
-    }
-}
-
 .storage {
     color: @pink;
 
@@ -140,10 +130,6 @@ atom-text-editor {
 .variable {
     color: @syntax-text-color; // white
 
-    &.parameter {
-        font-style: italic;
-        color: @orange;
-    }
     // 'self' Python
     &.language.python,
     // 'this' Javascript
@@ -157,6 +143,22 @@ atom-text-editor {
 .class.jade {
     color: @purple;
 }
+
+.meta {
+    &.tag {
+        color: @syntax-text-color;
+    }
+
+    &.delimiter.period {
+        color: @pink
+    }
+
+    &.function .variable {
+        font-style: italic;
+        color: @orange;
+    }
+}
+
 // Prevent underlines from making their way into whitespace elements
 
 .leading-whitespace,
