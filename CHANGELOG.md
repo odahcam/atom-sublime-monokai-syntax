@@ -1,3 +1,7 @@
+## 0.3.9 - Sublimer coloring
+* Function call color switched from white (VisualStudio Monokai) to light-blue (Sublime Monokai).
+* CSS optimized.
+
 ## 0.3.8 - Absolute path for screenshot
 * README.md update.
 

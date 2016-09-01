@@ -63,12 +63,12 @@ atom-text-editor .search-results .marker.current-result .region {
     border: 1px solid @syntax-result-marker-color-selected;
 }
 
-.string {
-    color: @yellow;
-}
-
 .comment {
     color: @brown;
+}
+
+.string {
+    color: @yellow;
 }
 
 .source {
@@ -93,7 +93,12 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .storage {
-    color: @purple;
+    color: @pink;
+
+    &.type {
+        font-style: italic;
+        color: @blue;
+    }
 }
 
 :host([mini]) .scroll-view,

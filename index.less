@@ -53,10 +53,6 @@ atom-text-editor {
     }
 }
 
-.function-call.object {
-    color: @function-call-color;
-}
-
 .entity {
     &.name {
         &.class {
@@ -92,6 +88,11 @@ atom-text-editor {
             text-decoration: none;
             color: @green;
         }
+
+        &.class.jade {
+            // Jade syntax
+            color: @purple;
+        }
     }
 }
 
@@ -106,15 +107,6 @@ atom-text-editor {
     &.illegal {
         background-color: @red;
         color: @syntax-background-color;
-    }
-}
-
-.storage {
-    color: @pink;
-
-    &.type {
-        font-style: italic;
-        color: @blue;
     }
 }
 
@@ -141,11 +133,6 @@ atom-text-editor {
         font-style: italic;
     }
 }
-// Jade syntax
-
-.class.jade {
-    color: @purple;
-}
 
 .meta {
     &.tag {
@@ -156,19 +143,23 @@ atom-text-editor {
         color: @pink
     }
 
+    &.function-call {
+        color: @function-call-color;
+    }
+
     &.function .variable {
         font-style: italic;
         color: @orange;
     }
 }
-
 // Prevent underlines from making their way into whitespace elements
+
 .leading-whitespace,
 .trailing-whitespace {
     display: inline-block;
 }
-
 // specific language highlight
+
 .php {
     // PHP syntax highlighting
     .punctuation.section.embedded {
