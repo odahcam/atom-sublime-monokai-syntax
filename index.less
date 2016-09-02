@@ -96,6 +96,16 @@ atom-text-editor {
     }
 }
 
+.punctuation {
+    &.definition.parameters,
+    &.section.embedded,
+    &.section.scope,
+    &.separator,
+    &.terminator.expression {
+        color: @syntax-text-color;
+    }
+}
+
 .invalid {
     color: @ghost-white;
     background-color: @pink;
@@ -143,7 +153,8 @@ atom-text-editor {
         color: @pink
     }
 
-    &.function-call:not(.js) { // atom puts the ( and ) punctuations inside the function-call block for JS
+    &.function-call:not(.js) {
+        // atom puts the ( and ) punctuations inside the function-call block for JS
         color: @function-call-color;
     }
 
@@ -163,7 +174,6 @@ atom-text-editor {
 .php {
     // PHP syntax highlighting
     .punctuation.section.embedded {
-        color: @syntax-text-color; // white
         font-weight: bold;
         font-style: italic;
     }
