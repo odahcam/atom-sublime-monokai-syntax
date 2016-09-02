@@ -143,7 +143,7 @@ atom-text-editor {
         color: @pink
     }
 
-    &.function-call {
+    &.function-call:not(.js) { // atom puts the ( and ) punctuations inside the function-call block for JS
         color: @function-call-color;
     }
 
