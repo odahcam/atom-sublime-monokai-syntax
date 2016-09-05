@@ -1,3 +1,6 @@
+## 0.3.9 - Secure
+* Pacth to secure that last version is live.
+
 ## 0.3.9 - Sublimer coloring
 * Function call color switched from white (VisualStudio Monokai) to light-blue (Sublime Monokai).
 * CSS optimized.
