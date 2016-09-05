@@ -1,4 +1,4 @@
-## 0.3.9 - Secure
+## 0.3.11 - Secure
 * Pacth to secure that last version is live.
 
 ## 0.3.9 - Sublimer coloring
