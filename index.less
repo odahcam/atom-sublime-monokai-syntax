@@ -1,164 +1,163 @@
 @import "./styles/base.less";
 
-:host,
 atom-text-editor {
     .search-results {
-        .marker .region {
+        .syntax--marker .region {
             background-color: transparent;
             border: 1px solid @syntax-result-marker-color;
         }
 
-        .marker.current-result .region {
+        .syntax--marker.current-result .region {
             border: 1px solid @syntax-result-marker-color-selected;
         }
     }
 
-    .gfm {
-        .markup {
-            &.heading {
+    .syntax--gfm {
+        .syntax--markup {
+            &.syntax--heading {
                 color: @green;
                 font-weight: bold;
             }
 
-            &.underline {
+            &.syntax--underline {
                 color: @yellow;
                 text-decoration: underline;
             }
         }
 
-        .bold {
+        .syntax--bold {
             font-weight: bold;
         }
 
-        .italic {
+        .syntax--italic {
             font-style: italic;
         }
 
-        .raw {
+        .syntax--raw {
             color: @blue;
         }
 
-        .variable.list {
+        .syntax--variable.syntax--list {
             color: @pink;
             font-weight: bold;
         }
 
-        .link {
+        .syntax--link {
             color: @light-gray;
 
-            .entity {
+            .syntax--entity {
                 color: @purple;
             }
         }
     }
 }
 
-.entity {
-    &.name {
-        &.class {
+.syntax--entity {
+    &.syntax--name {
+        &.syntax--class {
             text-decoration: none;
             color: @green;
         }
 
-        &.function {
+        &.syntax--function {
             color: @function-declaration-color;
 
-            .method-call & {
+            .syntax--method-call & {
                 // selects the parent which className is method-call
                 color: @function-call-color;
             }
         }
 
-        &.instance {
+        &.syntax--instance {
             color: @blue;
         }
 
-        &.tag {
+        &.syntax--tag {
             color: @pink;
         }
     }
 
-    &.other {
-        &.attribute-name {
+    &.syntax--other {
+        &.syntax--attribute-name {
             color: @green;
         }
 
-        &.inherited-class {
+        &.syntax--inherited-class {
             font-style: italic;
             text-decoration: none;
             color: @green;
         }
 
-        &.class.jade {
+        &.syntax--class.syntax--jade {
             // Jade syntax
             color: @purple;
         }
     }
 }
 
-.punctuation {
-    &.definition.parameters,
-    &.section.embedded,
-    &.section.scope,
-    &.separator,
-    &.terminator.expression {
+.syntax--punctuation {
+    &.syntax--definition.syntax--parameters,
+    &.syntax--section.syntax--embedded,
+    &.syntax--section.syntax--scope,
+    &.syntax--separator,
+    &.syntax--terminator.syntax--expression {
         color: @syntax-text-color;
     }
 }
 
-.invalid {
+.syntax--invalid {
     color: @ghost-white;
     background-color: @pink;
 
-    &.deprecated {
+    &.syntax--deprecated {
         background-color: @purple;
     }
 
-    &.illegal {
+    &.syntax--illegal {
         background-color: @red;
         color: @syntax-background-color;
     }
 }
 
-.support {
-    &.constant,
-    &.function {
+.syntax--support {
+    &.syntax--constant,
+    &.syntax--function {
         color: @function-call-color;
     }
 
-    &.class,
-    &.type {
+    &.syntax--class,
+    &.syntax--type {
         font-style: italic;
         color: @blue;
     }
 }
 
-.variable {
+.syntax--variable {
     color: @syntax-text-color; // white
     // 'self' Python
-    &.language.python,
+    &.syntax--language.syntax--python,
     // 'this' Javascript
-    &.language.js {
+    &.syntax--language.syntax--js {
         color: @pink;
         font-style: italic;
     }
 }
 
-.meta {
-    &.tag {
+.syntax--meta {
+    &.syntax--tag {
         color: @syntax-text-color;
     }
 
-    &.delimiter.period {
+    &.syntax--delimiter.syntax--period {
         color: @pink
     }
 
-    &.function-call:not(.js) {
+    &.syntax--function-call:not(.syntax--js) {
         // atom puts the ( and ) punctuations inside the function-call block for JS
         color: @function-call-color;
     }
 
-    &.function .variable {
+    &.syntax--function .syntax--variable {
         font-style: italic;
         color: @orange;
     }
@@ -171,9 +170,9 @@ atom-text-editor {
 }
 // specific language highlight
 
-.php {
+.syntax--php {
     // PHP syntax highlighting
-    .punctuation.section.embedded {
+    .syntax--punctuation.syntax--section.syntax--embedded {
         font-weight: bold;
         font-style: italic;
     }

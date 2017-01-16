@@ -1,4 +1,7 @@
-## 0.3.11 - Secure
+## 0.4.0 - Atom Hermeneutics Update
+* Added the `syntax--` preffix on syntax selectors. Here's the RegExp: `\.(scope|terminator|expression|method-call|js|php|underline|sql|marker|comment|keyword|other|operator|control|special-method|unit|storage|constant|character|escape|numeric|color|symbol|variable|interpolation|parameter|language|function|illegal|invalid|string|regexp|source|ruby|embedded|link|punctuation|definition|array|heading|identity|bold|italic|section|support|class|any-method|entity|name|type|inherited-class|tag|attribute-name|id|meta|require|selector|separator|none|markup|changed|deleted|inserted|list|quote|raw|inline|gfm)` => `.syntax--$1`.
+
+## 0.3.9 - Secure
 * Pacth to secure that last version is live.
 
 ## 0.3.9 - Sublimer coloring
