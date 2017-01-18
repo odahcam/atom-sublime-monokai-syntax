@@ -1,3 +1,5 @@
+## 0.4.3 - Sadly fix package.json error from 0.4.2
+
 ## 0.4.2 - Corrected package.json error
 
 ## 0.4.1 - Package info updated
