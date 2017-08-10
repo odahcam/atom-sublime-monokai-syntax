@@ -1,7 +1,7 @@
 {
   "name": "atom-sublime-monokai-syntax",
   "theme": "syntax",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "author": "odahcam",
   "description": "A monokai theme, made with ❤ and Vodka (kidding, was ☕ again) for Sublime Text Monokai Syntax and ⚛ lovers. 💚",
   "keywords": [
