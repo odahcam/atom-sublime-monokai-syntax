@@ -1,6 +1,8 @@
 ## 0.4.5
 * Python based workarrounds: as long as Atom text highlighting is sometimes a mess, these workarrounds for shitty markup are necessary.
 
+## 0.4.4 - Damn packaje.json, finally, it's okay now!
+
 ## 0.4.3 - Sadly fix package.json error from 0.4.2
 
 ## 0.4.2 - Corrected package.json error
