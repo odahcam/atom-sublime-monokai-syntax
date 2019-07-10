@@ -14,7 +14,7 @@ Actually I'm trying to make it better and I want your help! 😉
 
 **Install via APM:** `apm install atom-sublime-monokai-syntax`
 
-![Screenshot in 0.3.3 showing PHP, HTML and JS highlighting.](https://github.com/odahcam/atom-sublime-monokai-syntax/raw/master/update/0.3.3.PNG "Screenshot in 0.3.3 showing PHP, HTML and JS.")
+![Screenshot in 0.3.3 showing PHP, HTML and JS highlighting.](https://github.com/odahcam/atom-sublime-monokai-syntax/raw/master/printscreens/0.3.3.PNG "Screenshot in 0.3.3 showing PHP, HTML and JS.")
 
 ----
 
